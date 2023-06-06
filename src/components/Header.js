@@ -39,17 +39,17 @@ function Header(){
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             {activeUser &&
                                 <li className="nav-item">
-                                <Link id="hover" className="nav-link active" aria-current="page" to="/">Home</Link>
+                                <Link id="hover" className="nav-link active" aria-current="page" to="/Home">Home</Link>
                                 </li>
                             }
-                            {!activeUser &&
-                                <li className="nav-item">
-                                <Link id="hover" className="nav-link active" aria-current="page" to="/login">Login</Link>
-                                </li>
-                            }
+                            {/*{!activeUser &&*/}
+                            {/*    <li className="nav-item">*/}
+                            {/*    <Link id="hover" className="nav-link active" aria-current="page" to="/">Login</Link>*/}
+                            {/*    </li>*/}
+                            {/*}*/}
                             {activeUser &&
                                 <li className="nav-item">
-                                <Link id="hover" className="nav-link active" aria-current="page" to="/admin">dashboard</Link>
+                                <Link id="hover" className="nav-link active" aria-current="page" to="/admin">Upload Image</Link>
                                 </li>
                             }
                         </ul>
