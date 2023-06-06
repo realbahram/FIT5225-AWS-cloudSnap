@@ -1,5 +1,5 @@
 import React, {useContext, useState,useEffect} from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import AccountContext from "../Context/AccountContext.js";
 import userPool from "../States/userPool.js";
 function Header(){
@@ -7,10 +7,12 @@ function Header(){
 
     const {getSession,logout} = context;
     const [activeUser,setActiveUser] = useState(false);
+    const navigate = useNavigate();
     const logOut =()=>{
         logout()
             .then(data=>{
-                console.log("logged out")
+                console.log("logged out");
+                navigate("/");
             })
             .catch(err=>{
                 console.log(err);

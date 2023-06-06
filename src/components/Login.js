@@ -1,6 +1,7 @@
 import React, {useState,useContext,useEffect} from "react";
 import accountContext from "../Context/AccountContext.js";
 import AccountContext from "../Context/AccountContext.js";
+import {useNavigate} from "react-router-dom";
 function Login(){
     const [email,setEmail] = useState("");
     const [name,setName] = useState("");
@@ -9,11 +10,12 @@ function Login(){
     const [registered,setRegistered] = useState(true);
 
     const {signup, authenticate,getSession} = useContext(AccountContext);
-
+    const navigate = useNavigate();
     useEffect(()=>{
         getSession()
             .then(session=>{
                 console.log(session);
+                navigate("/home");
             })
             .catch(err=>{
                 console.log(err);
@@ -33,7 +35,7 @@ function Login(){
         signup(email,name,familyName,password)
             .then(data =>{
                 console.log("register done", data);
-
+                navigate("/");
             })
             .catch(err =>{
                 console.log("failed to register". err.message);
@@ -46,6 +48,7 @@ function Login(){
             .then(data =>{
                 localStorage.setItem('email',email);
                 console.log("login successfull",data);
+                navigate("/home");
             })
             .catch(err=>{
                 console.log("fail to login",err.message);
