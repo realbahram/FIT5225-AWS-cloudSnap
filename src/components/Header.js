@@ -58,10 +58,10 @@ function Header(){
                                     data-bs-toggle="dropdown" aria-expanded="false">
                             </button>
                             <ul className="dropdown-menu dropdown-menu-dark">
-                                <li><button className="dropdown-item" type="button">User Info</button> </li>
-                                <li><button className="dropdown-item" type="button">change password</button> </li>
+                                {/*<li><button className="dropdown-item" type="button">User Info</button> </li>*/}
+                                {/*<li><button className="dropdown-item" type="button">change password</button> </li>*/}
                                 <li><button className="dropdown-item" type="button" onClick={logOut}>log out</button> </li>
-                                <li><button className="dropdown-item" type="button">delete account</button> </li>
+                                {/*<li><button className="dropdown-item" type="button">delete account</button> </li>*/}
                             </ul>
                         </div>
                         <span className="navbar-text">logged in as , <span className="name-color">username</span></span>
