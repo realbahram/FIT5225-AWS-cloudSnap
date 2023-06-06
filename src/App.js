@@ -7,6 +7,7 @@ import Home from "./components/Home.js";
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 import AccountState from "./States/AccountState.js";
 import AdminDashboard from "./components/AdminDashboard.js";
+import UploadImage from "./components/UploadImage.js"
 function App() {
   return (
       <BrowserRouter>
@@ -16,7 +17,7 @@ function App() {
                   <Routes>
                       <Route exact path="/" element={<Login/>}></Route>
                       <Route exact path="/home" element={<Home/>}></Route>
-                      <Route exact path="/admin" element={<AdminDashboard/>}></Route>
+                      <Route exact path="/admin" element={<UploadImage/>}></Route>
                   </Routes>
               </div>
               <Footer/>
