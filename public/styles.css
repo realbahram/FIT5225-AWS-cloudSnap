@@ -35,6 +35,68 @@ footer{
 .name-color{
     color: #FFBF00;
 }
-.uploaImage{
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.file-input{
+    margin-bottom: 10px;
+}
+.upload-button{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.query-search-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.query-search-container h2 {
+    margin-top: 0;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+.button-container {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.query-list-container {
+    margin-top: 20px;
+}
+
+.query-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.query-list li {
+    margin-bottom: 5px;
+}
+
+.query-name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.query-repetitions {
+    color: #777777;
 }

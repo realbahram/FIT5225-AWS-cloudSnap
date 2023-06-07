@@ -39,7 +39,7 @@ const  AccountState = (props) =>{
                                         result[Name] = Value;
                                     }
                                     resolve(result);
-                                    console.log(result)
+                                    console.log("result",result)
                                     localStorage.setItem('name',result.name);
                                     localStorage.setItem('family_name',result.family_name);
                                     localStorage.setItem('sub',result.sub);

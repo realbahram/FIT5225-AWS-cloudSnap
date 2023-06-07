@@ -51,9 +51,30 @@ function Header(){
                             {/*}*/}
                             {activeUser &&
                                 <li className="nav-item">
-                                <Link id="hover" className="nav-link active" aria-current="page" to="/admin">Upload Image</Link>
+                                <Link id="hover" className="nav-link active" aria-current="page" to="/uploadImage">Upload Image</Link>
                                 </li>
                             }
+                            {activeUser &&
+                                <li className="nav-item">
+                                    <Link id="hover" className="nav-link active" aria-current="page" to="/searchByTags">Search by Tags</Link>
+                                </li>
+                            }
+                            {activeUser &&
+                                <li className="nav-item">
+                                    <Link id="hover" className="nav-link active" aria-current="page" to="/addremove">add and remove tags</Link>
+                                </li>
+                            }
+                            {activeUser &&
+                                <li className="nav-item">
+                                    <Link id="hover" className="nav-link active" aria-current="page" to="/searchByImage">search by image</Link>
+                                </li>
+                            }
+                            {activeUser &&
+                                <li className="nav-item">
+                                    <Link id="hover" className="nav-link active" aria-current="page" to="/deleteimage">delete image</Link>
+                                </li>
+                            }
+
                         </ul>
                         <div className="dropdown">
                             <button className="btn btn-secondary dropdown-toggle" type="button"
